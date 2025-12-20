@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="./src/output.css" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
 </head>
-<body>
-    
-    <script src="./src/scripts/main.js"></script>
+<body  class="bg-[#F5F6F8] min-h-screen">
+  <header  dir="rtl" class="bg-[#FFFFFF] flex items-center justify-between rounded-lg bg-surface-light px-4 py-3 ">
+    <button 
+    type="button" 
+    class="grid size-6 place-items-center rounded-lg hover:bg-primary-hover-light/10 active:bg-primary-hover-light/15"
+    aria-label="menu">
+      <img src="./src/assets/icons/hamburger-menu-svgrepo-com.svg" alt="hamburger-menu" class="size-[24px]">
+    </button>
+    <h1 class="text-[#000000] ">
+        کوئرا لیست
+    </h1>
+     <span class="size-6" aria-hidden="true"></span>
+  </header>
+  
+  <main dir="rtl" class="flex-1 px-4 mt-4">
+    <div class="flex items-center gap-4">
+      <img src="./src/assets/images/68ff308177dd64be56b77b645113191065f1ff7b.png" alt="avatar" class="size-12 rounded-full object-cover">
+      <div class="flex-1">
+        <p class="text-[18px] text-[#000000] ">سلام رویا</p>
+        <p class="text-[14px] text-[#C8C7CB] ">امروز، سه شنبه 5بهمن1403</p>
+      </div> 
+      
+    </div>
+  </main>
+  <script src="./src/scripts/main.js"></script>
 </body>
 </html>
