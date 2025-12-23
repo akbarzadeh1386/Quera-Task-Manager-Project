@@ -1,13 +1,358 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./src/output.css" rel="stylesheet">
-</head>
-<body>
-    
+    <link href="./src/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="max-w-[420px] md:max-w-[960px] mx-auto min-h-screen px-6 py-8">
+      <div class="text-right mb-6">
+        <h2 class="text-xl font-bold mb-2">تسک‌های امروز</h2>
+        <p class="text-sm text-gray-400">تسکی برای امروز نداری!</p>
+      </div>
+
+      <button
+        class="w-full border-2 border-dashed rounded-xl py-4 text-blue-500 font-medium flex items-center gap-2 mb-10"
+      >
+        <span class="text-xl mr-3">+</span>
+        افزودن وظیفه جدید
+      </button>
+
+      <div class="flex justify-center mb-8">
+        <img
+          src="./images/2143202_Artboard 1@3x.png"
+          alt="illustration"
+          class="w-[250px] md:w-[280px]"
+        />
+      </div>
+
+      <div class="text-center mb-10">
+        <h3 class="font-bold mb-1 text-gray-500">
+          چه کارهایی امروز برای انجام داری؟
+        </h3>
+        <p class="text-gl text-gray-400">
+          می‌تونی الان تسک‌هاتو بنویسی و برنامه‌ریزی رو شروع کنی!
+        </p>
+      </div>
+      <!-- بخش اضافه کردن کار ها -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)]"
+      >
+        <input
+          type="text"
+          class="w-full rounded-lg text-right mb-4 outline-white"
+          placeholder="نام تسک"
+        />
+        <textarea
+          placeholder="توضیحات"
+          class="w-full rounded-lg text-right resize-none outline-white"
+        ></textarea>
+
+        <button
+          class="inline-flex items-center gap-1 px-2 py-1 rounded-lg shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] text-gray-500 text-sm mb-7"
+        >
+          تگ‌ها
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="size-5"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9.47 15.28a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 1 0-1.06-1.06L10 13.69 6.28 9.97a.75.75 0 0 0-1.06 1.06l4.25 4.25ZM5.22 6.03l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L10 8.69 6.28 4.97a.75.75 0 0 0-1.06 1.06Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="flex gap-3 p-2 w-fit bg-white rounded-lg shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)]"
+        >
+          <div>
+            <button class="px-2 py-0.5 rounded bg-green-100 text-green-600">
+              پایین
+            </button>
+          </div>
+          <main class="text-[#EBEDEF]">|</main>
+          <div>
+            <button class="px-2 py-0.5 rounded bg-yellow-100 text-yellow-600">
+              متوسط
+            </button>
+          </div>
+          <main class="text-[#EBEDEF]">|</main>
+          <div>
+            <button class="px-2 py-0.5 rounded bg-red-100 text-red-600">
+              بالا
+            </button>
+          </div>
+        </div>
+        <hr class="my-7" />
+        <div class="flex justify-end gap-3">
+          <button class="bg-[#F5F5F5] text-xl py-1.5 px-4 rounded-lg">X</button>
+          <button class="bg-[#007BFF] text-white py-1.5 px-5 rounded-lg">
+            اضافه کردن تسک
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] mb-5"
+      >
+        <button class="absolute left-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-7"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="absolute flex gap-2 left-7 bg-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] rounded-md px-1 py-1 mt-6"
+        >
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+              />
+            </svg>
+          </button>
+          <main class="text-[#EBEDEF]">|</main>
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <input type="checkbox" class="w-5 h-5" />
+
+        <span
+          class="bg-red-500 absolute right-0 h-[80%] w-1 rounded-full"
+        ></span>
+
+        <div class="pr-8 -mt-7">
+          <h3 class="text-base">جلسه با مدیران پروژه</h3>
+
+          <span
+            class="inline-block mt-2 px-2 py-1 text-sm rounded-md bg-red-100 text-red-600"
+          >
+            بالا
+          </span>
+
+          <p class="mt-3 text-gray-400">جلسه با محسن یگانه و مریم جلالی</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] mb-5"
+      >
+        <button class="absolute left-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-7"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+        <div
+          class="absolute flex gap-2 left-7 bg-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] rounded-md px-1 py-1 mt-6"
+        >
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+              />
+            </svg>
+          </button>
+          <main class="text-[#EBEDEF]">|</main>
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <input type="checkbox" class="w-5 h-5" />
+
+        <span
+          class="bg-yellow-500 absolute right-0 h-[80%] w-1 rounded-full"
+        ></span>
+
+        <div class="pr-8 -mt-7">
+          <h3 class="text-base">خرید میوه و سبزیجات و لبنیات برای خانه</h3>
+
+          <span
+            class="inline-block mt-2 px-2 py-1 text-sm rounded-md bg-yellow-100 text-yellow-600"
+          >
+            متوسط
+          </span>
+
+          <p class="mt-3 text-gray-400">سوپرمارکت یاران دریایی</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)]"
+      >
+        <button class="absolute left-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-7"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="absolute flex gap-2 left-7 bg-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] rounded-md px-1 py-1 mt-6"
+        >
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+              />
+            </svg>
+          </button>
+          <main class="text-[#EBEDEF]">|</main>
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <input type="checkbox" class="w-5 h-5" />
+
+        <span
+          class="bg-green-500 absolute right-0 h-[80%] w-1 rounded-full"
+        ></span>
+
+        <div class="pr-8 -mt-7">
+          <h3 class="text-base">تماس با جمشید</h3>
+
+          <span
+            class="inline-block mt-2 px-2 py-1 text-sm rounded-md bg-green-100 text-green-600"
+          >
+            پایین
+          </span>
+
+          <p class="mt-3 text-gray-400">
+            باید در مورد کارهای باقیمانده از پروژه قبلی صحبت کنیم.
+          </p>
+        </div>
+      </div>
+      <div
+        class="bg-white rounded-xl p-4 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)]"
+      >
+        <input
+          type="text"
+          class="w-full rounded-lg text-right mb-4 outline-white"
+          placeholder="نام تسک"
+        />
+        <input
+          placeholder="توضیحات"
+          class="w-full rounded-lg text-right resize-none outline-white"
+        />
+
+        <div
+          class="inline-block mt-2 px-2 py-1 text-sm rounded-md bg-yellow-100 text-yellow-600"
+        >
+          <button class="text-black">X</button>
+
+          متوسط
+        </div>
+
+        <hr class="my-7" />
+        <div class="flex justify-end gap-3">
+          <button class="bg-[#007BFF] text-white py-1.5 px-5 rounded-lg">
+            ویرایش تسک
+          </button>
+        </div>
+      </div>
+    </main>
     <script src="./src/scripts/main.js"></script>
-</body>
+  </body>
 </html>
