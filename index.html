@@ -7,15 +7,15 @@
     <link href="./src/output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="dark:bg-[#060C18]">
     <main class="max-w-[420px] md:max-w-[960px] mx-auto min-h-screen px-6 py-8">
       <div class="text-right mb-6">
-        <h2 class="text-xl font-bold mb-2">تسک‌های امروز</h2>
+        <h2 class="text-xl font-bold mb-2 dark:text-white">تسک‌های امروز</h2>
         <p class="text-sm text-gray-400">تسکی برای امروز نداری!</p>
       </div>
 
       <button
-        class="w-full border-2 border-dashed rounded-xl py-4 text-blue-500 font-medium flex items-center gap-2 mb-10"
+        class="w-full border-2 border-dashed rounded-xl py-4 text-blue-500 font-medium flex items-center gap-2 mb-10 dark:border-blue-300"
       >
         <span class="text-xl mr-3">+</span>
         افزودن وظیفه جدید
@@ -39,7 +39,7 @@
       </div>
       <!-- بخش اضافه کردن کار ها -->
       <div
-        class="bg-white rounded-2xl p-6 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)]"
+        class="bg-white rounded-2xl p-6 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#060C18] dark:shadow-[#3D3D3D]"
       >
         <input
           type="text"
@@ -52,7 +52,7 @@
         ></textarea>
 
         <button
-          class="inline-flex items-center gap-1 px-2 py-1 rounded-lg shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] text-gray-500 text-sm mb-7"
+          class="inline-flex items-center gap-1 px-2 py-1 rounded-lg shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] text-gray-500 text-sm mb-7 dark:shadow-gray-400 dark:text-gray-400"
         >
           تگ‌ها
           <svg
@@ -70,44 +70,56 @@
         </button>
 
         <div
-          class="flex gap-3 p-2 w-fit bg-white rounded-lg shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)]"
+          class="flex gap-3 p-3 w-fit bg-white rounded-lg shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:shadow-gray-400 dark:bg-[#0B192D]"
         >
           <div>
-            <button class="px-2 py-0.5 rounded bg-green-100 text-green-600">
+            <button
+              class="px-2 py-0.5 rounded bg-green-100 text-green-600 dark:text-[#02E1A2] dark:bg-[#233332]"
+            >
               پایین
             </button>
           </div>
-          <main class="text-[#EBEDEF]">|</main>
+          <main class="text-[#EBEDEF] dark:text-gray-400">|</main>
           <div>
-            <button class="px-2 py-0.5 rounded bg-yellow-100 text-yellow-600">
+            <button
+              class="px-2 py-0.5 rounded bg-yellow-100 text-yellow-600 dark:text-[#FFAF37] dark:bg-[#302F2D]"
+            >
               متوسط
             </button>
           </div>
-          <main class="text-[#EBEDEF]">|</main>
+          <main class="text-[#EBEDEF] dark:text-gray-400">|</main>
           <div>
-            <button class="px-2 py-0.5 rounded bg-red-100 text-red-600">
+            <button
+              class="px-2 py-0.5 rounded bg-red-100 text-red-600 dark:text-[#FF5F37] dark:bg-[#3D2327]"
+            >
               بالا
             </button>
           </div>
         </div>
-        <hr class="my-7" />
+        <hr class="my-7 dark:border-[#3D3D3D]" />
         <div class="flex justify-end gap-3">
-          <button class="bg-[#F5F5F5] text-xl py-1.5 px-4 rounded-lg">X</button>
-          <button class="bg-[#007BFF] text-white py-1.5 px-5 rounded-lg">
+          <button
+            class="bg-[#F5F5F5] text-xl py-1.5 px-4 rounded-lg dark:bg-gray-800 dark:text-white"
+          >
+            X
+          </button>
+          <button
+            class="bg-[#007BFF] text-white py-1.5 px-5 rounded-lg dark:bg-gray-800 dark:text-gray-400"
+          >
             اضافه کردن تسک
           </button>
         </div>
       </div>
 
       <div
-        class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] mb-5"
+        class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] mb-5 dark:bg-[#091120]"
       >
         <button class="absolute left-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="size-7"
+            class="size-7 dark:text-white"
           >
             <path
               fill-rule="evenodd"
@@ -118,7 +130,7 @@
         </button>
 
         <div
-          class="absolute flex gap-2 left-7 bg-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] rounded-md px-1 py-1 mt-6"
+          class="absolute flex gap-2 left-7 bg-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] rounded-md px-1 py-1 mt-6 dark:bg-gray-800"
         >
           <button>
             <svg
@@ -127,7 +139,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-5"
+              class="size-5 dark:text-white"
             >
               <path
                 stroke-linecap="round"
@@ -136,7 +148,7 @@
               />
             </svg>
           </button>
-          <main class="text-[#EBEDEF]">|</main>
+          <main class="text-[#EBEDEF] dark:text-gray-700">|</main>
           <button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +156,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-5"
+              class="size-5 dark:text-white"
             >
               <path
                 stroke-linecap="round"
@@ -155,14 +167,14 @@
           </button>
         </div>
 
-        <input type="checkbox" class="w-5 h-5" />
+        <input type="checkbox" class="w-5 h-5 dark:accent-blue-700" />
 
         <span
           class="bg-red-500 absolute right-0 h-[80%] w-1 rounded-full"
         ></span>
 
         <div class="pr-8 -mt-7">
-          <h3 class="text-base">جلسه با مدیران پروژه</h3>
+          <h3 class="text-base dark:text-white">جلسه با مدیران پروژه</h3>
 
           <span
             class="inline-block mt-2 px-2 py-1 text-sm rounded-md bg-red-100 text-red-600"
@@ -175,14 +187,14 @@
       </div>
 
       <div
-        class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] mb-5"
+        class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] mb-5 dark:bg-[#091120]"
       >
         <button class="absolute left-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="size-7"
+            class="size-7 dark:text-white"
           >
             <path
               fill-rule="evenodd"
@@ -192,7 +204,7 @@
           </svg>
         </button>
         <div
-          class="absolute flex gap-2 left-7 bg-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] rounded-md px-1 py-1 mt-6"
+          class="absolute flex gap-2 left-7 bg-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] rounded-md px-1 py-1 mt-6 dark:bg-gray-800"
         >
           <button>
             <svg
@@ -201,7 +213,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-5"
+              class="size-5 dark:text-white"
             >
               <path
                 stroke-linecap="round"
@@ -210,7 +222,8 @@
               />
             </svg>
           </button>
-          <main class="text-[#EBEDEF]">|</main>
+          <main class="text-[#EBEDEF] dark:text-gray-700">|</main>
+
           <button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -218,7 +231,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-5"
+              class="size-5 dark:text-white"
             >
               <path
                 stroke-linecap="round"
@@ -229,14 +242,16 @@
           </button>
         </div>
 
-        <input type="checkbox" class="w-5 h-5" />
+        <input type="checkbox" class="w-5 h-5 dark:accent-blue-700" />
 
         <span
           class="bg-yellow-500 absolute right-0 h-[80%] w-1 rounded-full"
         ></span>
 
         <div class="pr-8 -mt-7">
-          <h3 class="text-base">خرید میوه و سبزیجات و لبنیات برای خانه</h3>
+          <h3 class="text-base dark:text-white">
+            خرید میوه و سبزیجات و لبنیات برای خانه
+          </h3>
 
           <span
             class="inline-block mt-2 px-2 py-1 text-sm rounded-md bg-yellow-100 text-yellow-600"
@@ -249,14 +264,14 @@
       </div>
 
       <div
-        class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)]"
+        class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#091120]"
       >
         <button class="absolute left-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="size-7"
+            class="size-7 dark:text-white"
           >
             <path
               fill-rule="evenodd"
@@ -267,7 +282,7 @@
         </button>
 
         <div
-          class="absolute flex gap-2 left-7 bg-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] rounded-md px-1 py-1 mt-6"
+          class="absolute flex gap-2 left-7 bg-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] rounded-md px-1 py-1 mt-6 dark:bg-gray-800"
         >
           <button>
             <svg
@@ -276,7 +291,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-5"
+              class="size-5 dark:text-white"
             >
               <path
                 stroke-linecap="round"
@@ -285,7 +300,7 @@
               />
             </svg>
           </button>
-          <main class="text-[#EBEDEF]">|</main>
+          <main class="text-[#EBEDEF] dark:text-gray-700">|</main>
           <button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -293,7 +308,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-5"
+              class="size-5 dark:text-white"
             >
               <path
                 stroke-linecap="round"
@@ -304,14 +319,14 @@
           </button>
         </div>
 
-        <input type="checkbox" class="w-5 h-5" />
+        <input type="checkbox" class="w-5 h-5 dark:accent-blue-700" />
 
         <span
           class="bg-green-500 absolute right-0 h-[80%] w-1 rounded-full"
         ></span>
 
         <div class="pr-8 -mt-7">
-          <h3 class="text-base">تماس با جمشید</h3>
+          <h3 class="text-base dark:text-white">تماس با جمشید</h3>
 
           <span
             class="inline-block mt-2 px-2 py-1 text-sm rounded-md bg-green-100 text-green-600"
@@ -325,29 +340,31 @@
         </div>
       </div>
       <div
-        class="bg-white rounded-xl p-4 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)]"
+        class="bg-white rounded-xl p-4 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#060C18] dark:shadow-[#091120]"
       >
         <input
           type="text"
-          class="w-full rounded-lg text-right mb-4 outline-white"
+          class="w-full rounded-lg text-right mb-4 outline-white dark:text-white dark:outline-none"
           placeholder="نام تسک"
         />
         <input
           placeholder="توضیحات"
-          class="w-full rounded-lg text-right resize-none outline-white"
+          class="w-full rounded-lg text-right resize-none outline-white dark:text-white dark:outline-none"
         />
 
         <div
-          class="inline-block mt-2 px-2 py-1 text-sm rounded-md bg-yellow-100 text-yellow-600"
+          class="inline-block mt-4 px-2 py-1 text-sm rounded-md bg-yellow-100 text-yellow-600"
         >
           <button class="text-black">X</button>
 
           متوسط
         </div>
 
-        <hr class="my-7" />
+        <hr class="my-7 dark:border-[#3D3D3D]" />
         <div class="flex justify-end gap-3">
-          <button class="bg-[#007BFF] text-white py-1.5 px-5 rounded-lg">
+          <button
+            class="bg-[#007BFF] text-white py-1.5 px-5 rounded-lg dark:bg-[#002247]"
+          >
             ویرایش تسک
           </button>
         </div>
