@@ -1,8 +1,7 @@
-<<<<<<< Updated upstream
-=======
+
 // Handling hamburger menu and x mark btn 
 
->>>>>>> Stashed changes
+
 const hamburgerBtn = document.getElementById("hamburgerMenu");
 const sidebarCloseBtn = document.getElementById("closeBtn");
 const mobileSidebar = document.getElementById("sideBar");
@@ -11,11 +10,6 @@ const overlay = document.getElementById("overlay");
 hamburgerBtn.addEventListener("click", () => {
     mobileSidebar.classList.remove("hidden");
     overlay.classList.remove("hidden");
-<<<<<<< Updated upstream
-    
-=======
-
->>>>>>> Stashed changes
 
 })
 sidebarCloseBtn.addEventListener("click", () => {
@@ -28,8 +22,7 @@ function closeSidebar() {
     overlay.classList.add("hidden");
 }
 
-<<<<<<< Updated upstream
-=======
+
 //   Get automatic date
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -57,4 +50,4 @@ document.addEventListener("DOMContentLoaded", () => {
         el.setAttribute("dir", "rtl");
     });
 });
->>>>>>> Stashed changes
+
