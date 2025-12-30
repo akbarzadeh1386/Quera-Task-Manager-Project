@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/akbarzadeh1386/Quera-Task-Manager-Project#readme",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.18",
+    "@tailwindcss/cli": "^4.1.18"
+  },
+  "devDependencies": {
     "tailwindcss": "^4.1.18"
   }
 }

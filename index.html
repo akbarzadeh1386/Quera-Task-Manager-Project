@@ -5,8 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link href="./src/output.css" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./dist/output.css" rel="stylesheet">
 </head>
 
 
@@ -133,13 +132,14 @@
             <h3 class="w-11.75">پروفایل</h3>
           </li>
         </ul>
+        <!-- light and dark section -->
         <div class="bg-[#f7f7f7] rounded-lg w-52 h-11 mt-16">
           <ul class="flex justify-around  gap-4 text-[#525252] p-1">
-            <li class="flex gap-2 items-center bg-[#ffffff] rounded p-1 w-1/2">
+            <li id="lightBtn" class="flex gap-2 items-center bg-[#ffffff] rounded p-1 w-1/2 cursor-pointer">
               <img src="./icons/sun.svg" alt="sun">
               <h3>روشن</h3>
             </li>
-            <li class="flex items-center gap-2">
+            <li id="darkBtn" class="flex items-center gap-2 cursor-pointer">
               <img src="./icons/moon.svg" alt="moon">
               <h3>تاریک</h3>
             </li>

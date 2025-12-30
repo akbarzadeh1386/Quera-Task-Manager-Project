@@ -51,3 +51,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// dark and light theme
+const lightBtn = document.getElementById("lightBtn");
+const darkBtn = document.getElementById("darkBtn");
+
+lightBtn.addEventListener("click", () => {
+    html.classList.remove("dark");
+    localStorage.theme = "light";
+    setActiveButton("light");
+});
+
+darkBtn.addEventListener("click", () => {
+    html.classList.add("dark");
+    localStorage.theme = "dark";
+    setActiveButton("dark");
+});
+
