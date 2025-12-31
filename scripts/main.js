@@ -52,18 +52,28 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // dark and light theme
+
+const html = document.documentElement;
 const lightBtn = document.getElementById("lightBtn");
 const darkBtn = document.getElementById("darkBtn");
+const switchBg = document.getElementById("switchBg");
 
-lightBtn.addEventListener("click", () => {
-    html.classList.remove("dark");
-    localStorage.theme = "light";
-    setActiveButton("light");
-});
+function setTheme(theme) {
+    if (theme === "dark") {
+        html.classList.add("dark");
+        switchBg.style.transform = "translateX(-90%)";
+    } else {
+        html.classList.remove("dark");
+        switchBg.style.transform = "translateX(0)";
+    }
+    localStorage.setItem("theme", theme);
+}
 
-darkBtn.addEventListener("click", () => {
-    html.classList.add("dark");
-    localStorage.theme = "dark";
-    setActiveButton("dark");
-});
+const savedTheme = localStorage.getItem("theme") || "light";
+setTheme(savedTheme);
+
+
+lightBtn.addEventListener("click", () => setTheme("light"));
+darkBtn.addEventListener("click", () => setTheme("dark"));
+
 
