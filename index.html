@@ -8,29 +8,39 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="dark:bg-[#060C18]">
-    <header  dir="rtl" class="bg-[#FFFFFF] flex items-center justify-between rounded-lg bg-surface-light px-4 py-3 ">
-    <button 
-    type="button" 
-    class="grid size-6 place-items-center rounded-lg hover:bg-primary-hover-light/10 active:bg-primary-hover-light/15"
-    aria-label="menu">
-      <img src="./src/assets/icons/hamburger-menu-svgrepo-com.svg" alt="hamburger-menu" class="size-[24px]">
-    </button>
-    <h1 class="text-[#000000] ">
-        کوئرا لیست
-    </h1>
-     <span class="size-6" aria-hidden="true"></span>
-  </header>
-  
-  <div dir="rtl" class="flex-1 px-4 mt-4">
-    <div class="flex items-center gap-4">
-      <img src="./src/assets/images/68ff308177dd64be56b77b645113191065f1ff7b.png" alt="avatar" class="size-12 rounded-full object-cover">
-      <div class="flex-1">
-        <p class="text-[18px] text-[#000000] ">سلام رویا</p>
-        <p class="text-[14px] text-[#C8C7CB] ">امروز، سه شنبه 5بهمن1403</p>
-      </div> 
-      
+    <header
+      dir="rtl"
+      class="bg-[#FFFFFF] flex items-center justify-between rounded-lg bg-surface-light px-4 py-3"
+    >
+      <button
+        type="button"
+        class="grid size-6 place-items-center rounded-lg hover:bg-primary-hover-light/10 active:bg-primary-hover-light/15"
+        aria-label="menu"
+      >
+        <img
+          src="./src/assets/icons/hamburger-menu-svgrepo-com.svg"
+          alt="hamburger-menu"
+          class="size-[24px]"
+        />
+      </button>
+      <h1 class="text-[#000000]">کوئرا لیست</h1>
+      <span class="size-6" aria-hidden="true"></span>
+    </header>
+
+    <div dir="rtl" class="flex-1 px-4 mt-4">
+      <div class="flex items-center gap-4">
+        <img
+          src="./src/assets/images/68ff308177dd64be56b77b645113191065f1ff7b.png"
+          alt="avatar"
+          class="size-12 rounded-full object-cover"
+        />
+        <div class="flex-1">
+          <p class="text-[18px] text-[#000000]">سلام رویا</p>
+          <p class="text-[14px] text-[#C8C7CB]">امروز، سه شنبه 5بهمن1403</p>
+        </div>
+      </div>
     </div>
-  </div>
+
     <main class="max-w-[420px] md:max-w-[960px] mx-auto min-h-screen px-6 py-8">
       <div class="text-right mb-6">
         <h2 class="text-xl font-bold mb-2 dark:text-white">تسک‌های امروز</h2>
@@ -38,104 +48,161 @@
       </div>
 
       <button
+        id="addBtn"
         class="w-full border-2 border-dashed rounded-xl py-4 text-blue-500 font-medium flex items-center gap-2 mb-10 dark:border-blue-300"
       >
         <span class="text-xl mr-3">+</span>
         افزودن وظیفه جدید
       </button>
+      <div class="emptyState">
+        <div class="flex justify-center mb-8">
+          <img
+            src="./images/2143202_Artboard 1@3x.png"
+            alt="illustration"
+            class="w-[250px] md:w-[280px]"
+          />
+        </div>
 
-      <div class="flex justify-center mb-8">
-        <img
-          src="./images/2143202_Artboard 1@3x.png"
-          alt="illustration"
-          class="w-[250px] md:w-[280px]"
-        />
-      </div>
-
-      <div class="text-center mb-10">
-        <h3 class="font-bold mb-1 text-gray-500">
-          چه کارهایی امروز برای انجام داری؟
-        </h3>
-        <p class="text-gl text-gray-400">
-          می‌تونی الان تسک‌هاتو بنویسی و برنامه‌ریزی رو شروع کنی!
-        </p>
+        <div class="text-center mb-10">
+          <h3 class="font-bold mb-1 text-gray-500">
+            چه کارهایی امروز برای انجام داری؟
+          </h3>
+          <p class="text-gl text-gray-400">
+            می‌تونی الان تسک‌هاتو بنویسی و برنامه‌ریزی رو شروع کنی!
+          </p>
+        </div>
       </div>
       <!-- بخش اضافه کردن کار ها -->
       <div
-        class="bg-white rounded-2xl p-6 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#060C18] dark:shadow-[#3D3D3D]"
+        id="taskForm"
+        class="bg-white rounded-2xl p-6 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#060C18] dark:shadow-[#3D3D3D] hidden"
       >
         <input
+          id="taskTitleInput"
           type="text"
           class="w-full rounded-lg text-right mb-4 outline-white"
           placeholder="نام تسک"
         />
         <textarea
+          id="taskDescInput"
           placeholder="توضیحات"
           class="w-full rounded-lg text-right resize-none outline-white"
         ></textarea>
-
-        <button
-          class="inline-flex items-center gap-1 px-2 py-1 rounded-lg shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] text-gray-500 text-sm mb-7 dark:shadow-gray-400 dark:text-gray-400"
-        >
-          تگ‌ها
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            class="size-5"
+        <div class="relative">
+          <button
+            id="openTagsBtn"
+            class="inline-flex items-center gap-1 px-2 py-1 rounded-lg shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] text-gray-500 text-sm mb-7 dark:shadow-gray-400 dark:text-gray-400"
           >
-            <path
-              fill-rule="evenodd"
-              d="M9.47 15.28a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 1 0-1.06-1.06L10 13.69 6.28 9.97a.75.75 0 0 0-1.06 1.06l4.25 4.25ZM5.22 6.03l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L10 8.69 6.28 4.97a.75.75 0 0 0-1.06 1.06Z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </button>
+            تگ‌ها
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="size-5 hidden"
+              id="arrowUp"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.47 15.28a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 1 0-1.06-1.06L10 13.69 6.28 9.97a.75.75 0 0 0-1.06 1.06l4.25 4.25ZM5.22 6.03l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L10 8.69 6.28 4.97a.75.75 0 0 0-1.06 1.06Z"
+                clip-rule="evenodd"
+              />
+            </svg>
 
-        <div
-          class="flex gap-3 p-3 w-fit bg-white rounded-lg shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:shadow-gray-400 dark:bg-[#0B192D]"
-        >
-          <div>
-            <button
-              class="px-2 py-0.5 rounded bg-green-100 text-green-600 dark:text-[#02E1A2] dark:bg-[#233332]"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="size-5"
+              id="arrowDown"
             >
-              پایین
-            </button>
+              <path
+                fill-rule="evenodd"
+                d="M15.28 9.47a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 1 1-1.06-1.06L13.69 10 9.97 6.28a.75.75 0 0 1 1.06-1.06l4.25 4.25ZM6.03 5.22l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L8.69 10 4.97 6.28a.75.75 0 0 1 1.06-1.06Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div id="tagsBox" class="hidden">
+            <div
+              class="flex gap-3 p-3 w-fit bg-white rounded-lg shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:shadow-gray-400 dark:bg-[#0B192D]"
+            >
+              <div>
+                <button
+                  id="priorityLowBtn"
+                  data-level="low"
+                  data-class="bg-green-100 text-green-600"
+                  class="px-2 py-0.5 rounded bg-green-100 text-green-600 dark:text-[#02E1A2] dark:bg-[#233332]"
+                >
+                  پایین
+                </button>
+              </div>
+              <main class="text-[#EBEDEF] dark:text-gray-400">|</main>
+              <div>
+                <button
+                  id="priorityMidBtn"
+                  data-level="mid"
+                  data-class="bg-yellow-100 text-yellow-600"
+                  class="px-2 py-0.5 rounded bg-yellow-100 text-yellow-600 dark:text-[#FFAF37] dark:bg-[#302F2D]"
+                >
+                  متوسط
+                </button>
+              </div>
+              <main class="text-[#EBEDEF] dark:text-gray-400">|</main>
+              <div>
+                <button
+                  id="priorityHighBtn"
+                  data-level="high"
+                  data-class="bg-red-100 text-red-600"
+                  class="px-2 py-0.5 rounded bg-red-100 text-red-600 dark:text-[#FF5F37] dark:bg-[#3D2327]"
+                >
+                  بالا
+                </button>
+              </div>
+            </div>
           </div>
-          <main class="text-[#EBEDEF] dark:text-gray-400">|</main>
-          <div>
-            <button
-              class="px-2 py-0.5 rounded bg-yellow-100 text-yellow-600 dark:text-[#FFAF37] dark:bg-[#302F2D]"
-            >
-              متوسط
+          <div
+            id="chosenTagBox"
+            class="inline-flex items-center gap-2 px-2 py-1 rounded-lg mt-2"
+          >
+            <button id="deleteTagBtn" class="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4 text-black text-right hidden"
+                id="closeX"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
             </button>
-          </div>
-          <main class="text-[#EBEDEF] dark:text-gray-400">|</main>
-          <div>
-            <button
-              class="px-2 py-0.5 rounded bg-red-100 text-red-600 dark:text-[#FF5F37] dark:bg-[#3D2327]"
-            >
-              بالا
-            </button>
+            <span id="chosenTagText" class="text-right"></span>
           </div>
         </div>
         <hr class="my-7 dark:border-[#3D3D3D]" />
         <div class="flex justify-end gap-3">
           <button
+            id="closeForm"
             class="bg-[#F5F5F5] text-xl py-1.5 px-4 rounded-lg dark:bg-gray-800 dark:text-white"
           >
             X
           </button>
           <button
+            id="submitTaskBtn"
             class="bg-[#007BFF] text-white py-1.5 px-5 rounded-lg dark:bg-gray-800 dark:text-gray-400"
           >
             اضافه کردن تسک
           </button>
         </div>
       </div>
-
-      <div
-        class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] mb-5 dark:bg-[#091120]"
+      <div id="taskList"></div>
+      <!-- <div
+        class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] mb-5 dark:bg-[#091120] hidden"
       >
         <button class="absolute left-3">
           <svg
@@ -287,7 +354,7 @@
       </div>
 
       <div
-        class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#091120]"
+        class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#091120] hidden"
       >
         <button class="absolute left-3">
           <svg
@@ -363,7 +430,7 @@
         </div>
       </div>
       <div
-        class="bg-white rounded-xl p-4 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#060C18] dark:shadow-[#091120]"
+        class="bg-white rounded-xl p-4 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#060C18] dark:shadow-[#091120] hidden"
       >
         <input
           type="text"
@@ -390,9 +457,9 @@
           >
             ویرایش تسک
           </button>
-        </div>
+        </div> -->
       </div>
     </main>
-    <script src="./src/scripts/main.js"></script>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
