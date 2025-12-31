@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/output.css" />
 </head>
 
 
@@ -174,7 +174,6 @@
           </li>
 
         </ul>
-        <!-- light and dark section -->
         <div class="relative bg-[#f7f7f7] dark:bg-[#0C1B31] rounded-lg w-52 h-11 mt-16 p-1">
 
           <div id="switchBg" class="absolute top-1 right-1 h-9 w-1/2
@@ -184,44 +183,11 @@
           <ul class="relative z-10 flex dark:text-[#7A7A7A] h-full ">
             <li id="lightBtn"
               class="flex gap-2 items-center justify-center w-1/2 cursor-pointer font-bold text-[#525252] dark:text-[#7A7A7A] transition-colors duration-300">
-              <svg class="w-4 stroke-[#7A7A7A]" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
-                xml:space="preserve">
-                <g>
-                  <circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="32" cy="32" r="16" />
-                  <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="32" y1="10" x2="32"
-                    y2="0" />
-                  <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="32" y1="64" x2="32"
-                    y2="54" />
-                  <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="54" y1="32" x2="64"
-                    y2="32" />
-                  <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="0" y1="32" x2="10"
-                    y2="32" />
-                  <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="48" y1="16" x2="53"
-                    y2="11" />
-                  <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="11" y1="53" x2="16"
-                    y2="48" />
-                  <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="48" y1="48" x2="53"
-                    y2="53" />
-                  <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="11" y1="11" x2="16"
-                    y2="16" />
-                </g>
-              </svg>
               <h3>روشن</h3>
             </li>
 
             <li id="darkBtn"
               class="flex gap-2 items-center justify-center w-1/2 cursor-pointer dark:font-bold text-[#7A7A7A] dark:text-white transition-colors duration-300">
-              <svg class="w-4 stroke-[#808080] dark:stroke-white " viewBox="0 0 32 32" version="1.1"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g id="icomoon-ignore">
-                </g>
-                <path
-                  d="M9.882 5.052c-0.847 1.717-1.295 3.614-1.295 5.564 0 6.977 5.676 12.653 12.653 12.653 2.052 0 4.035-0.489 5.812-1.412-2.15 3.869-6.248 6.37-10.862 6.37-6.866 0-12.451-5.585-12.451-12.451 0-4.491 2.409-8.533 6.143-10.724zM12.79 2.707c-5.817 1.509-10.118 6.78-10.118 13.069 0 7.465 6.053 13.517 13.518 13.517 6.387 0 11.726-4.435 13.139-10.389-2.087 2.039-4.939 3.298-8.088 3.298-6.399 0-11.587-5.188-11.587-11.587 0-3.061 1.196-5.838 3.137-7.909v0z"
-                  fill="#000000">
-
-                </path>
-              </svg>
               <h3>تاریک</h3>
             </li>
           </ul>
@@ -230,16 +196,6 @@
         <div class="w-[80%] h-px  bg-[#E9E9E9] mx-auto dark:bg-[#2F3132]"></div>
         <div
           class="flex items-center gap-4 mt-3 text-[#525252] p-1 dark:text-white cursor-pointer hover:text-[#007BFF] hover:bg-[#F5FAFF] dark:hover:bg-[#041933]">
-          <svg class="w-4 stroke-[#808080]  text-[#292D32] dark:text-white dark:stroke-white hover:text-[#007BFF]" viewBox="0 0 24 24"
-            fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M8.90002 7.55999C9.21002 3.95999 11.06 2.48999 15.11 2.48999H15.24C19.71 2.48999 21.5 4.27999 21.5 8.74999V15.27C21.5 19.74 19.71 21.53 15.24 21.53H15.11C11.09 21.53 9.24002 20.08 8.91002 16.54"
-              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M15 12H3.62" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <path d="M5.85 8.6499L2.5 11.9999L5.85 15.3499" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
           <h3>خروج</h3>
         </div>
       </div>
@@ -252,15 +208,73 @@
     <main class="w-105 md:w-240 lg:w-5xl mx-auto min-h-screen px-6 py-8">
       <div class="text-right mb-6">
         <h2 class="text-xl font-bold mb-2 dark:text-white">تسک‌های امروز</h2>
-        <p class="text-sm text-gray-400">تسکی برای امروز نداری!</p>
+        <p id="todayEmpty" class="text-sm text-gray-400">تسکی برای امروز نداری!</p>
       </div>
 
-      <button
+      <button id="openAddTaskBtn"
         class="w-full border-2 border-dashed rounded-xl py-4 text-blue-500 font-medium flex items-center gap-2 mb-10 dark:border-blue-300">
         <span class="text-xl mr-3">+</span>
         افزودن وظیفه جدید
       </button>
 
+      <div id="addTaskSection"
+        class="hidden bg-white rounded-2xl p-6 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#060C18] dark:shadow-[#3D3D3D] mb-10">
+
+        <input id="addTitle" type="text"
+          class="w-full rounded-lg text-right mb-4 outline-white dark:bg-[#060C18] dark:text-white dark:border-none dark:outline-none dark:focus:ring-0"
+          placeholder="نام تسک" />
+
+        <textarea id="addDesc" placeholder="توضیحات"
+          class="w-full rounded-lg text-right resize-none outline-white dark:bg-[#060C18] dark:text-white dark:border-none dark:outline-none dark:focus:ring-0"></textarea>
+
+        <button id="addTagsBtn" type="button"
+          class="inline-flex items-center gap-1 px-2 py-1 rounded-lg shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] text-gray-500 text-sm mb-4 dark:shadow-gray-400 dark:text-gray-400">
+          تگ‌ها
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+            <path fill-rule="evenodd"
+              d="M9.47 15.28a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 1 0-1.06-1.06L10 13.69 6.28 9.97a.75.75 0 0 0-1.06 1.06l4.25 4.25ZM5.22 6.03l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L10 8.69 6.28 4.97a.75.75 0 0 0-1.06 1.06Z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+
+        <div id="addPriorityPanel"
+          class="hidden flex gap-3 p-3 w-fit bg-white rounded-lg shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:shadow-gray-400 dark:bg-[#0B192D] mb-2">
+          <div>
+            <button type="button" data-add-priority="پایین"
+              class="px-2 py-0.5 rounded bg-green-100 text-green-600 dark:text-[#02E1A2] dark:bg-[#233332]">
+              پایین
+            </button>
+          </div>
+          <main class="text-[#EBEDEF] dark:text-gray-400">|</main>
+          <div>
+            <button type="button" data-add-priority="متوسط"
+              class="px-2 py-0.5 rounded bg-yellow-100 text-yellow-600 dark:text-[#FFAF37] dark:bg-[#302F2D]">
+              متوسط
+            </button>
+          </div>
+          <main class="text-[#EBEDEF] dark:text-gray-400">|</main>
+          <div>
+            <button type="button" data-add-priority="بالا"
+              class="px-2 py-0.5 rounded bg-red-100 text-red-600 dark:text-[#FF5F37] dark:bg-[#3D2327]">
+              بالا
+            </button>
+          </div>
+        </div>
+
+        <hr class="my-7 dark:border-[#3D3D3D]" />
+        <div class="flex justify-end gap-3">
+          <button id="closeAddTaskBtn" type="button"
+            class="bg-[#F5F5F5] text-xl py-1.5 px-4 rounded-lg dark:bg-gray-800 dark:text-white">
+            X
+          </button>
+          <button id="addTaskBtn" type="button"
+            class="bg-[#007BFF] text-white py-1.5 px-5 rounded-lg dark:bg-gray-800 dark:text-gray-400">
+            اضافه کردن تسک
+          </button>
+        </div>
+      </div>
+
+      
       <div class="flex justify-center mb-8">
         <img src="./images/2143202_Artboard 1@3x.png" alt="illustration" class="w-62.5 md:w-70" />
       </div>
@@ -274,207 +288,202 @@
         </p>
       </div>
 
-      <div
-        class="bg-white rounded-2xl p-6 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#060C18] dark:shadow-[#3D3D3D]">
-        <input type="text"
+     
+      <div id="todayList">
+
+        <div class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] mb-5 dark:bg-[#091120]"
+          data-task-card>
+          <button class="absolute left-3" type="button" data-action="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+              class="size-7 dark:text-white">
+              <path fill-rule="evenodd"
+                d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+
+          
+          <div
+            class="absolute hidden flex flex-nowrap items-center gap-2 left-7 bg-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] rounded-md px-1 py-1 mt-6 dark:bg-gray-800 whitespace-nowrap"
+            data-menu>
+            <button type="button" data-action="delete">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 dark:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+              </svg>
+            </button>
+            <main class="text-[#EBEDEF] dark:text-gray-700">|</main>
+            <button type="button" data-action="edit">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 dark:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+              </svg>
+            </button>
+          </div>
+
+          
+          <input type="checkbox" class="w-5 h-5 dark:accent-blue-700" data-action="toggle" />
+
+          <span class="bg-red-500 absolute right-0 h-[80%] w-1 rounded-full" data-priority-bar></span>
+
+          <div class="pr-8 -mt-7">
+            <h3 class="text-base dark:text-white" data-title>جلسه با مدیران پروژه</h3>
+
+            <span
+              class="inline-block mt-2 px-2 py-1 text-sm rounded-md bg-red-100 text-red-600"
+              data-priority-badge
+              data-priority="بالا"
+            >
+              بالا
+            </span>
+
+            <p class="mt-3 text-gray-400" data-desc>جلسه با محسن یگانه و مریم جلالی</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] mb-5 dark:bg-[#091120]"
+          data-task-card>
+          <button class="absolute left-3" type="button" data-action="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+              class="size-7 dark:text-white">
+              <path fill-rule="evenodd"
+                d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+
+          <div
+            class="absolute hidden flex flex-nowrap items-center gap-2 left-7 bg-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] rounded-md px-1 py-1 mt-6 dark:bg-gray-800 whitespace-nowrap"
+            data-menu>
+            <button type="button" data-action="delete">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 dark:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+              </svg>
+            </button>
+            <main class="text-[#EBEDEF] dark:text-gray-700">|</main>
+            <button type="button" data-action="edit">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 dark:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+              </svg>
+            </button>
+          </div>
+
+          <input type="checkbox" class="w-5 h-5 dark:accent-blue-700" data-action="toggle" />
+
+          <span class="bg-yellow-500 absolute right-0 h-[80%] w-1 rounded-full" data-priority-bar></span>
+
+          <div class="pr-8 -mt-7">
+            <h3 class="text-base dark:text-white" data-title>خرید میوه و سبزیجات و لبنیات برای خانه</h3>
+
+            <span class="inline-block mt-2 px-2 py-1 text-sm rounded-md bg-yellow-100 text-yellow-600"
+              data-priority-badge data-priority="متوسط">
+              متوسط
+            </span>
+
+            <p class="mt-3 text-gray-400" data-desc>سوپرمارکت یاران دریایی</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#091120]"
+          data-task-card>
+          <button class="absolute left-3" type="button" data-action="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+              class="size-7 dark:text-white">
+              <path fill-rule="evenodd"
+                d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 0 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+
+          <div
+            class="absolute hidden flex flex-nowrap items-center gap-2 left-7 bg-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] rounded-md px-1 py-1 mt-6 dark:bg-gray-800 whitespace-nowrap"
+            data-menu>
+            <button type="button" data-action="delete">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 dark:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+              </svg>
+            </button>
+            <main class="text-[#EBEDEF] dark:text-gray-700">|</main>
+            <button type="button" data-action="edit">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 dark:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+              </svg>
+            </button>
+          </div>
+
+          <input type="checkbox" class="w-5 h-5 dark:accent-blue-700" data-action="toggle" />
+
+          <span class="bg-green-500 absolute right-0 h-[80%] w-1 rounded-full" data-priority-bar></span>
+
+          <div class="pr-8 -mt-7">
+            <h3 class="text-base dark:text-white" data-title>تماس با جمشید</h3>
+
+            <span class="inline-block mt-2 px-2 py-1 text-sm rounded-md bg-green-100 text-green-600"
+              data-priority-badge data-priority="پایین">
+              پایین
+            </span>
+
+            <p class="mt-3 text-gray-400" data-desc>
+              باید در مورد کارهای باقیمانده از پروژه قبلی صحبت کنیم.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      
+      <div id="editTemplate"
+        class="hidden bg-white rounded-xl p-4 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#060C18] dark:shadow-[#091120]">
+        <input id="editTitle" type="text"
           class="w-full rounded-lg text-right mb-4 outline-white dark:bg-[#060C18] dark:text-white dark:border-none dark:outline-none dark:focus:ring-0"
           placeholder="نام تسک" />
-        <textarea placeholder="توضیحات"
-          class="w-full rounded-lg text-right resize-none outline-white dark:bg-[#060C18] dark:text-white dark:border-none dark:outline-none dark:focus:ring-0"></textarea>
+        <input id="editDesc" placeholder="توضیحات"
+          class="w-full rounded-lg text-right resize-none outline-white dark:bg-[#060C18] dark:text-white dark:border-none dark:outline-none dark:focus:ring-0" />
 
-        <button
-          class="inline-flex items-center gap-1 px-2 py-1 rounded-lg shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] text-gray-500 text-sm mb-7 dark:shadow-gray-400 dark:text-gray-400">
-          تگ‌ها
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-            <path fill-rule="evenodd"
-              d="M9.47 15.28a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 1 0-1.06-1.06L10 13.69 6.28 9.97a.75.75 0 0 0-1.06 1.06l4.25 4.25ZM5.22 6.03l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L10 8.69 6.28 4.97a.75.75 0 0 0-1.06 1.06Z"
-              clip-rule="evenodd" />
-          </svg>
-        </button>
+        <div class="inline-block mt-4 px-2 py-1 text-sm rounded-md bg-yellow-100 text-yellow-600">
+          <button id="editPriorityClose" type="button" class="text-black">X</button>
+          <span id="editPriorityLabel">متوسط</span>
+        </div>
 
-        <div
-          class="flex gap-3 p-3 w-fit bg-white rounded-lg shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:shadow-gray-400 dark:bg-[#0B192D]">
+        
+        <div id="editPriorityPanel"
+          class="hidden mt-3 flex gap-3 p-3 w-fit bg-white rounded-lg shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:shadow-gray-400 dark:bg-[#0B192D]">
           <div>
-            <button class="px-2 py-0.5 rounded bg-green-100 text-green-600 dark:text-[#02E1A2] dark:bg-[#233332]">
+            <button type="button" data-edit-priority="پایین"
+              class="px-2 py-0.5 rounded bg-green-100 text-green-600 dark:text-[#02E1A2] dark:bg-[#233332]">
               پایین
             </button>
           </div>
           <main class="text-[#EBEDEF] dark:text-gray-400">|</main>
           <div>
-            <button class="px-2 py-0.5 rounded bg-yellow-100 text-yellow-600 dark:text-[#FFAF37] dark:bg-[#302F2D]">
+            <button type="button" data-edit-priority="متوسط"
+              class="px-2 py-0.5 rounded bg-yellow-100 text-yellow-600 dark:text-[#FFAF37] dark:bg-[#302F2D]">
               متوسط
             </button>
           </div>
           <main class="text-[#EBEDEF] dark:text-gray-400">|</main>
           <div>
-            <button class="px-2 py-0.5 rounded bg-red-100 text-red-600 dark:text-[#FF5F37] dark:bg-[#3D2327]">
+            <button type="button" data-edit-priority="بالا"
+              class="px-2 py-0.5 rounded bg-red-100 text-red-600 dark:text-[#FF5F37] dark:bg-[#3D2327]">
               بالا
             </button>
           </div>
         </div>
-        <hr class="my-7 dark:border-[#3D3D3D]" />
-        <div class="flex justify-end gap-3">
-          <button class="bg-[#F5F5F5] text-xl py-1.5 px-4 rounded-lg dark:bg-gray-800 dark:text-white">
-            X
-          </button>
-          <button class="bg-[#007BFF] text-white py-1.5 px-5 rounded-lg dark:bg-gray-800 dark:text-gray-400">
-            اضافه کردن تسک
-          </button>
-        </div>
-      </div>
-
-      <div class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] mb-5 dark:bg-[#091120]">
-        <button class="absolute left-3">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-            class="size-7 dark:text-white">
-            <path fill-rule="evenodd"
-              d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
-              clip-rule="evenodd" />
-          </svg>
-        </button>
-
-        <div
-          class="absolute flex gap-2 left-7 bg-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] rounded-md px-1 py-1 mt-6 dark:bg-gray-800">
-          <button>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-5 dark:text-white">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
-            </svg>
-          </button>
-          <main class="text-[#EBEDEF] dark:text-gray-700">|</main>
-          <button>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-5 dark:text-white">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
-            </svg>
-          </button>
-        </div>
-
-        <input type="checkbox" class="w-5 h-5 dark:accent-blue-700" />
-
-        <span class="bg-red-500 absolute right-0 h-[80%] w-1 rounded-full"></span>
-
-        <div class="pr-8 -mt-7">
-          <h3 class="text-base dark:text-white">جلسه با مدیران پروژه</h3>
-
-          <span class="inline-block mt-2 px-2 py-1 text-sm rounded-md bg-red-100 text-red-600">
-            بالا
-          </span>
-
-          <p class="mt-3 text-gray-400">جلسه با محسن یگانه و مریم جلالی</p>
-        </div>
-      </div>
-
-      <div class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] mb-5 dark:bg-[#091120]">
-        <button class="absolute left-3">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-            class="size-7 dark:text-white">
-            <path fill-rule="evenodd"
-              d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
-              clip-rule="evenodd" />
-          </svg>
-        </button>
-        <div
-          class="absolute flex gap-2 left-7 bg-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] rounded-md px-1 py-1 mt-6 dark:bg-gray-800">
-          <button>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-5 dark:text-white">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
-            </svg>
-          </button>
-          <main class="text-[#EBEDEF] dark:text-gray-700">|</main>
-
-          <button>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-5 dark:text-white">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
-            </svg>
-          </button>
-        </div>
-
-        <input type="checkbox" class="w-5 h-5 dark:accent-blue-700" />
-
-        <span class="bg-yellow-500 absolute right-0 h-[80%] w-1 rounded-full"></span>
-
-        <div class="pr-8 -mt-7">
-          <h3 class="text-base dark:text-white">
-            خرید میوه و سبزیجات و لبنیات برای خانه
-          </h3>
-
-          <span class="inline-block mt-2 px-2 py-1 text-sm rounded-md bg-yellow-100 text-yellow-600">
-            متوسط
-          </span>
-
-          <p class="mt-3 text-gray-400">سوپرمارکت یاران دریایی</p>
-        </div>
-      </div>
-
-      <div class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#091120]">
-        <button class="absolute left-3">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-            class="size-7 dark:text-white">
-            <path fill-rule="evenodd"
-              d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
-              clip-rule="evenodd" />
-          </svg>
-        </button>
-
-        <div
-          class="absolute flex gap-2 left-7 bg-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] rounded-md px-1 py-1 mt-6 dark:bg-gray-800">
-          <button>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-5 dark:text-white">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
-            </svg>
-          </button>
-          <main class="text-[#EBEDEF] dark:text-gray-700">|</main>
-          <button>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-5 dark:text-white">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
-            </svg>
-          </button>
-        </div>
-
-        <input type="checkbox" class="w-5 h-5 dark:accent-blue-700" />
-
-        <span class="bg-green-500 absolute right-0 h-[80%] w-1 rounded-full"></span>
-
-        <div class="pr-8 -mt-7">
-          <h3 class="text-base dark:text-white">تماس با جمشید</h3>
-
-          <span class="inline-block mt-2 px-2 py-1 text-sm rounded-md bg-green-100 text-green-600">
-            پایین
-          </span>
-
-          <p class="mt-3 text-gray-400">
-            باید در مورد کارهای باقیمانده از پروژه قبلی صحبت کنیم.
-          </p>
-        </div>
-      </div>
-      <div
-        class="bg-white rounded-xl p-4 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#060C18] dark:shadow-[#091120]">
-        <input type="text"
-          class="w-full rounded-lg text-right mb-4 outline-white dark:bg-[#060C18] dark:text-white dark:border-none dark:outline-none dark:focus:ring-0"
-          placeholder="نام تسک" />
-        <input placeholder="توضیحات"
-          class="w-full rounded-lg text-right resize-none outline-white dark:bg-[#060C18] dark:text-white dark:border-none dark:outline-none dark:focus:ring-0" />
-
-        <div class="inline-block mt-4 px-2 py-1 text-sm rounded-md bg-yellow-100 text-yellow-600">
-          <button class="text-black">X</button>
-
-          متوسط
-        </div>
 
         <hr class="my-7 dark:border-[#3D3D3D]" />
         <div class="flex justify-end gap-3">
-          <button class="bg-[#007BFF] text-white py-1.5 px-5 rounded-lg dark:bg-[#002247]">
+          <button id="saveEditBtn" type="button"
+            class="bg-[#007BFF] text-white py-1.5 px-5 rounded-lg dark:bg-[#002247]">
             ویرایش تسک
           </button>
         </div>
@@ -485,71 +494,79 @@
           تسک‌های انجام شده
         </h2>
 
-        <p class="text-sm text-[#696969] text-right mb-7 dark:text-[#848890]">
+        <p id="doneCount" class="text-sm text-[#696969] text-right mb-7 dark:text-[#848890]">
           ۳ تسک انجام شده است.
         </p>
 
-        <div class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#091120] mb-5">
-          <button class="absolute left-3">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-              class="size-7 dark:text-white">
-              <path fill-rule="evenodd"
-                d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
-                clip-rule="evenodd" />
-            </svg>
-          </button>
+        
+        <div id="doneList">
 
-          <input type="checkbox" checked class="w-5 h-5 accent-blue-600 ml-auto" />
+          <div class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#091120] mb-5"
+            data-done-card>
+            <button class="absolute left-3" type="button" data-action="menu">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="size-7 dark:text-white">
+                <path fill-rule="evenodd"
+                  d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
 
-          <span class="bg-yellow-500 absolute right-0 h-[70%] w-1 rounded-full"></span>
+            <input type="checkbox" checked class="w-5 h-5 accent-blue-600 ml-auto" data-action="toggle" />
 
-          <div class="pr-8 -mt-7">
-            <p class="flex px-2 text-right text-lg line-through decoration-1 dark:text-white">
-              خرید میوه و سبزیجات و لبنیات برای خانه
-            </p>
+            <span class="bg-yellow-500 absolute right-0 h-[70%] w-1 rounded-full"></span>
+
+            <div class="pr-8 -mt-7">
+              <p class="flex px-2 text-right text-lg line-through decoration-1 dark:text-white">
+                خرید میوه و سبزیجات و لبنیات برای خانه
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#091120] mb-5">
-          <button class="absolute left-3">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-              class="size-7 dark:text-white">
-              <path fill-rule="evenodd"
-                d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
-                clip-rule="evenodd" />
-            </svg>
-          </button>
+          <div class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#091120] mb-5"
+            data-done-card>
+            <button class="absolute left-3" type="button" data-action="menu">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="size-7 dark:text-white">
+                <path fill-rule="evenodd"
+                  d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
 
-          <input type="checkbox" checked class="w-5 h-5 accent-blue-600 ml-auto" />
+            <input type="checkbox" checked class="w-5 h-5 accent-blue-600 ml-auto" data-action="toggle" />
 
-          <span class="bg-red-500 absolute right-0 h-[70%] w-1 rounded-full"></span>
+            <span class="bg-red-500 absolute right-0 h-[70%] w-1 rounded-full"></span>
 
-          <div class="pr-8 -mt-7">
-            <p class="flex px-2 text-right text-lg line-through decoration-1 dark:text-white">
-              تماس با مبل فروشی در مورد تاخیر در ارسال
-            </p>
+            <div class="pr-8 -mt-7">
+              <p class="flex px-2 text-right text-lg line-through decoration-1 dark:text-white">
+                تماس با مبل فروشی در مورد تاخیر در ارسال
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#091120] mb-5">
-          <button class="absolute left-3">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-              class="size-7 dark:text-white">
-              <path fill-rule="evenodd"
-                d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
-                clip-rule="evenodd" />
-            </svg>
-          </button>
+          <div class="bg-white p-4 relative rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.15)] dark:bg-[#091120] mb-5"
+            data-done-card>
+            <button class="absolute left-3" type="button" data-action="menu">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="size-7 dark:text-white">
+                <path fill-rule="evenodd"
+                  d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
 
-          <input type="checkbox" checked class="w-5 h-5 accent-blue-600 ml-auto" />
+            <input type="checkbox" checked class="w-5 h-5 accent-blue-600 ml-auto" data-action="toggle" />
 
-          <span class="bg-green-500 absolute right-0 h-[70%] w-1 rounded-full"></span>
+            <span class="bg-green-500 absolute right-0 h-[70%] w-1 rounded-full"></span>
 
-          <div class="pr-8 -mt-7">
-            <p class="flex px-2 text-right text-lg line-through decoration-1 dark:text-white">
-              جلسه با مرتضی در مورد مصاحبه با کارآموز ادمین پنل
-            </p>
+            <div class="pr-8 -mt-7">
+              <p class="flex px-2 text-right text-lg line-through decoration-1 dark:text-white">
+                جلسه با مرتضی در مورد مصاحبه با کارآموز ادمین پنل
+              </p>
+            </div>
           </div>
+
         </div>
       </div>
     </main>
